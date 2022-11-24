@@ -1,0 +1,289 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    font-family: 'Oswald';
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+    animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.logo {
+    margin-left: 30px;
+    animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    font-family: 'Oswald';
+    font-size: 25px;
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+}
+
+.wrp {
+    
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.portada {
+    width: 100%;
+    height: 100%;
+    background: url("../imgdona/pexels-taryn-elliott-6214345\ \(1\)\ \(1\).gif");
+    background-attachment: fixed;
+}
+
+.contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 11, 0.6);
+}
+
+.contenido .info {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+
+.contenido .info h1 {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.contenido .info a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 10px 45px;
+    color: #fff;
+    background: #171717;
+    border-radius: 50px;
+    margin-bottom: 40px;
+   
+    
+}
+
+.contenido .info a:hover {
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.curveado {
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+}
+
+.curveado img {
+    width: 100%;
+}
+
+.donacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 25px 400px;
+}
+
+
+
+main {
+    padding: 90px 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-image: url("../imgacerca/imagen5.jpg");
+    padding: 1rem;
+}
+
+.formulario {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#171717;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #171717;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: transparent;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+footer{
+    background: #171717;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+
+
+.socials img:hover{
+    background-color: transparent;
+	border: 2px solid white;
+	cursor: pointer;
+}
+.socials img{
+    width: 40px;
+}
+
+@keyframes animar {
+    0%{
+        transform: scale(.3);/*para poder escalar como un zoom*/
+    } 
+  
+} 
